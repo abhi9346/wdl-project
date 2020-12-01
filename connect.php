@@ -6,7 +6,7 @@ $username = $_POST['username'];
 $password = $_POST['password'];
 echo $username;
 echo $password;
-echo 
+
 if(!empty($username)){
     if(!empty($password)){
     $host="localhost:3306";
