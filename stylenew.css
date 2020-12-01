@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  animation: transitionIn 0.7s;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.header {
+  color: whitesmoke;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right, #000046, #1cb5e0);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+}
+nav {
+  width: 100%;
+  height: 100px;
+  color: whitesmoke;
+  display: flex;
+}
+.name {
+  width: 50%;
+  height: 100px;
+}
+.name h1 {
+  font-size: 30px;
+  line-height: 100px;
+  margin-left: 80px;
+}
+-------------------------------------menu-----------------------------------
+  .menu {
+  width: 50%;
+  height: 100px;
+}
+.menu ul {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.menu ul li {
+  list-style: none;
+  font-size: 13px;
+  text-transform: uppercase;
+  padding-right: 100px;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+section {
+  display: flex;
+}
+.leftside {
+  width: 45%;
+  height: auto;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+    
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    
+  }
+}
+
+@keyframes fadeInDown {
+            0% {
+               opacity: 0;
+               transform: translateY(-20px);
+            }
+            100% {
+               opacity: 1;
+               transform: translateY(0);
+            }
+}
+
+
+.leftside img {
+  animation: fadeInRight ease 4s;
+
+  width: 600px;
+  height: 600px;
+  -webkit-animation: fadeInRight ease 4s;
+}
+
+.rightside {
+  width: 45%;
+  height: 500px;
+  color: whitesmoke;
+  text-align: center;
+  margin-top: 80px;
+}
+.rightside h1 {
+  animation: fadeInDown ease 3s;
+  
+  font-family: "Castoro", serif;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 900;
+}
+.rightside p {
+  animation: fadeInDown ease 3s;
+  font-size: 0.9rem;
+  padding-top: 17px;
+  letter-spacing: 0.1em;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    
+    
+  }
+  100% {
+    opacity: 1;
+    
+    
+  }
+}
+.btn {
+  animation: fadeIn ease 4s;
+  width: 90%;
+  height: 70px;
+  border-radius: 40px;
+  background: #fa4f00;
+  margin: 50px 80px;
+}
+.lgn {
+  float: left;
+  padding: 18px 80px;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+.sign {
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  margin: 18px;
+  padding-right: 50px;
+  text-decoration: none;
+}
+.circle {
+  animation: fadeIn ease 3s;
+  opacity: 60%;
+  width: 125px;
+  height: 125px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  left: 136vh;
+  top: 59vh;
+  animation-name: stretch;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+.smallcircle {
+  animation: fadeIn ease 3s;
+  box-shadow: 100px rgb(87, 80, 80);
+  width: 90px;
+  height: 90px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  left: 912px;
+  top: 405px;
+}
+@keyframes stretch {
+  0% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1.2);
+    
+  }
+}
+.detail{
+width: 100%;
+height: 600px;
+
+}
+.head1 {
+   animation: fadeIn ease 3s;
+ position: absolute;
+width: 473px;
+height: 64px;
+left: 409px;
+font-family: Arial Rounded MT Bold;
+font-style: normal;
+font-weight: bold;
+font-size: 55px;
+letter-spacing: 0.1em;
+color: #8D7670; 
+}
+.line{
+  position: absolute;
+width: 79px;
+height: 0px;
+left: 600px;
+top: 730px;
+border-radius: 5px;
+
+border: 5px solid #F63308;
+}
+.detail p{
+   animation: fadeIn ease 3s;
+  position: absolute;
+width: 1256px;
+height: 180px;
+padding-left: 100px;
+margin-top: 25vh;
+
+font-family: 'Cabin', sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 25px;
+line-height: 45px;
+/* or 180% */
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.1em;
+
+color: #0C0C0C;
+
+}
+
+.footerarea{
+  margin-top: 100px;
+
+}
+.footerwavebox{
+  position: absolute;
+  left: 0;
+  top: 0;
+  right:0;
+  height: 50px;
+  background: linear-gradient(to right, #000046, #1cb5e0);
+
+}
+
